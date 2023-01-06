@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- h1 부분 잘라내고 style.css로 저장한 다음 link:css눌러주면 저렇게 된다. 외부에서 가져오는 방법임. -->
+    <style>
+        h1  {
+            color: orange !important;
+        }
+        /* 우선순위 : 외부<내부 */
+        /* but !important를 적으면 가장 우선순위로 먹힌다!!! */
+    </style>
+</head>
+<body>
+    <h1 style="color:black;background: purple;">photoshop</h1>
+    <!-- 외우기!)) style="color:black;background: purple;" 계속 추가하는것이다... -->
+    <!-- 인라인시트가 내부시트보다 더 우선순위이므로 블랙이 먹힌다 -->
+    <!-- 호스팅하는법 아래부터시작 -->
+    <form action="">
+        <input type="tel">
+    </form>
+</body>
+</html>
+<!-- 우선순위 : 외부<내부<인라인<important -->
+
+<!-- link치면 link:css 뜨고 그걸 입력하면 <link rel="stylesheet" href="style.css">이렇게 뜸 -->

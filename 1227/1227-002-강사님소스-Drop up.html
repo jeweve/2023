@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop up</title>
+    <style>
+    .dropbtn {
+        background: #ccc;
+        color: #fff;
+        padding: 15px;
+        font-size: 14px;
+        border: none;
+        box-sizing: border-box;
+        width: 150px;
+    }
+
+    .dropup {
+        position: fixed;
+        width: 300px;
+        /* border: 1px solid red; */
+    }
+
+    .dropup-content {
+        display: none;
+        position: absolute;
+        background: #666;
+        width: 150px;
+        /* bottom: 45px; */
+        /* top: 45px; */
+        left: 150px;
+        top: 0;
+    }
+
+    .dropup:hover .dropup-content {
+        display: block;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 12px 15px;
+        display: block;
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Hoverable Dropup</h1>
+        <p>Example text...</p>
+        <p>Example text...</p>
+        <p>Move the mouse over the button to open the dropup menu.</p>
+
+    <div class="dropup">
+        
+        <button class="dropbtn">Dropup</button>
+        <div class="dropup-content">
+            <a href="#" class="a">Link 1</a>
+            <a href="#" class="a">Link 2</a>
+            <a href="#" class="a">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 카페에 소스 있음 -->
+<!-- 1227-002-팝업레이어-강사님소스.html 보고 공부하기-->

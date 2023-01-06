@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position - fixed</title>
+    <script src="https://kit.fontawesome.com/acc6245ef7.js" crossorigin="anonymous"></script>
+    <!-- 폰트어썸 코드 -->
+    <style>
+
+        body {
+            height: 10000px;
+        }
+        #circle {
+            width: 45px;
+            height: 45px;
+            border: 2px solid dodgerblue;
+            border-radius: 50%;
+            position: fixed;
+            /* fixed / relative / absoulte */
+            /* fixed는 브라우저를 기준값으로 설정이 먹는다 */
+            /* fixed는 스크롤을 내려도 같이 따라 내려온다 */
+            /* absolute는 스크롤을 내리면 따라서 사라진다 */
+            bottom: 5%;
+            right: 5%;
+        }
+        p {
+            text-align: center;
+            margin-top: -4px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id="circle">
+        <p>
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+        <span>TOP</span>
+        </p>
+        </div>
+        
+    <!-- div는 구역이나 공간을 만드는 대표적인 태그로서 block 개념의 대표적인 태그다 -->
+    <!-- div#circle 라고 치면 자동으로 <div id="circle"></div>라고 뜸 -->
+</body>
+</html>

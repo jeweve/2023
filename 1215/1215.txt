@@ -1,0 +1,37 @@
+1215
+
+block태그 :
+div
+li
+ul
+dl
+dt
+dd
+ol
+p
+blockquote
+h1~h6
+시멘틱태그 싹다 블락
+
+그 나머지는 싹다 인라인
+a태그
+b태그
+strong 
+em
+i
+
+img는..특이한거
+
+
+
+
+-----------------------
+애완견의 종류 
+메뉴4개 ul li
+
+border radius? px 탑왼/ 탑오 : 안줌 /바텀오 줬음/ 바텀왼 안줌
+
+
+dl.dt.dd
+
+ul,li

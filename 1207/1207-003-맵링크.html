@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맵링크</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="맵링크이미지.png" alt="" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="poly" coords="83,147,178,89,269,143,175,196" href="https://developer.mozilla.org/ko/docs/Web/JavaScript" alt="">
+        <area shape="poly" coords="76,144,76,256,173,305,173,202" href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics" alt="">
+        <area shape="poly" coords="176,202,176,307,272,256,272,145" href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started" alt="">
+    </map>
+</body>
+</html>
+
+<!-- 하나의 이미지에 여러개의 링크를 거는것이 맵링크다
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맵링크</title>
+</head>
+<body>
+    <img src="001.jpg" alt="" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="값주기" coords="값주기" href="주소걸기" alt="">
+    </map>
+</body>
+</html>
+
+
+-이 부분 외우기 : 
+<img src="001.jpg" alt="" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="" coords=" href="" alt="">
+    </map>
+
+
+area shape="rect, circle,poly   >>정사각형이나 직사각형이면 rect, 조금이라도 각이 있으면 poly, 원이면 circle
+coords="0,0,100,100
+
+
+네모
+<area shape="rect" coords="0,0,100,100" href="http://www.apple.com" alt="">
+동그라미
+<area shape="circle" coords="100,100,100" href="http://www.apple.com" alt=""> -->
+
+<!-- 좌표는 포토샵으로 잡는다
+포토샵 룰러를 픽셀로 바꾸고
+가이드선 잡고 0으로 위치 잡은 뒤 
+걸려는 위치를 라쏘툴로 잡아준 다음 window-info 패널 켜면 x,y 좌표 잡을 수 있다
+[웹표준 사이즈로 새 파일 만들기 한 다음 이미지 열어서 끌고 와야함] -->

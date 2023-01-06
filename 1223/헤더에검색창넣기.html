@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더에 검색창 넣기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+
+        #wrapper {
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            width: 80%;
+            overflow: hidden;
+        }
+
+        header {
+            float: left;
+            width: 100%;
+            background: green;
+            height: 50px;
+            /* border: 10px solid black; */
+        }
+
+        #logo {
+            /* border: 1px solid black; */
+            width: 60px;
+            height: 20px;
+            font-size: 10p;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            color: red;
+            display: inline;
+            text-align: center;
+            line-height: 20px;
+            margin: 15px 0 0 20px;
+            display: inline-block;
+        }
+
+        input[type="text"]:focus {
+            width: 150px;
+        }
+
+        input[type="text"] {
+            /* background: pink; */
+            border-radius: 10px;
+            width: 50px;
+            height: 8px;
+            font-size: 1px;
+            padding-left: 10px;
+            box-shadow: inset 1px 1px 1px rgba(245, 73, 242, 0.5);
+            transition: 0.5s;
+            margin: 5px 5px 0 0;
+            display: inline-block;
+            }
+        
+        form {
+            /* border: 1px solid black; */
+            text-align: right;
+            float: right;
+            
+        }
+
+        section {
+            width: 100%;
+            /* background: yellow; */
+            margin: 0 auto;
+            float: left;
+                }
+
+        article {
+            width: 70%;
+            /* background: rgb(252, 208, 215); */
+            float: left;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            width: 82px;
+            height: 76px;
+            border: 1px dashed green;
+            /* box-sizing: border-box; */
+            float: left;
+            padding: 3px;
+            margin: 3px;
+            position: relative;
+        }
+
+        .caption {
+            float: left;
+            border: 1px solid red;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 80px;
+            height: 75px;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 3px;
+            text-align: center;
+            color: white;
+            padding: 5px;
+            box-sizing: border-box;
+            z-index: 999;
+            background: rgba(0,0,0,0.6);
+        }
+
+        li:hover {
+            cursor: pointer;
+            background: rgba(255, 0, 0, 0.5);
+            transition: 0.6s;
+            
+        }
+
+        li:hover .caption {
+            opacity: 1;
+            transform: translateY(-76px);
+           /* transform 끌어올리는 역할 */
+        }
+
+        img {
+            width: 82px;
+            height: 76px;
+            margin: 0;
+            padding: 0;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            height: 180px;
+            /* border: 1px solid black; */
+            background: rgb(245, 245, 206);
+            border: 1px dashed red;
+            box-sizing: border-box;
+        }
+
+        footer {
+            clear: both;
+            background: green;
+            width: auto;
+            height: 30px;
+            color: red;
+            text-align: center;
+            font-size: 8px;
+            line-height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                X-MAS
+            </div>
+            <form action="">
+                <input type="text" id="j" placeholder="Search">
+            </form>
+        </header>
+        
+        <section>
+            <article>
+                <ul>
+                    <a href="http://www.yes24.com/Product/Goods/115477013"><li><img src="1.png" alt=""></li></a>
+                    <div class="caption">
+                        <h1>상품 1</h1> 
+                        <p>상품 1 설명 텍스트</p>
+                        <p>가격 : 12,345원</p>
+                      </div>
+                    <a href="http://www.yes24.com/product/goods/115477010"><li><img src="2.png" alt=""></li></a>
+                    <a href="https://m-shinsegaemall.ssg.com/mall/search.ssg?target=mobile&query=%EC%B6%98%EC%8B%9D%EC%9D%B4&inflow=6005&src_area=ssgrlt"><li><img src="3.png" alt=""></li></a>
+                    <a href="https://itemdesc.ssg.com/item/iframePItemDtlDesc.ssg?itemId=1000276491935&dispSiteNo=6005&ts=20211127202031/m2x/mixed/main/image/optimize"><li><img src="4.png" alt=""></li></a>
+                </ul>
+            </article>
+            
+            <aside>
+                
+                
+            </aside>
+
+            <footer>Happy Christmas</footer>
+        </section>
+    </div>
+</body>
+</html>
+
+<!-- 끌어올리기실패 -->

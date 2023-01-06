@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌측고정메뉴바</title>
+    <script src="https://kit.fontawesome.com/acc6245ef7.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            background: #555;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            font-size: 32px;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            background: #000;
+        }
+
+        .active {
+            background: green;
+        }
+        
+        #iconbar {
+            position: absolute;
+            /* 단독으로 주면 브라우저를 기준값으로 준다 */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* 테크닉 >>
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%); */
+
+            p {
+                line-height: 200%;
+            }
+            /* line-height의 개념 이해하기 */
+    </style>
+</head>
+<body>
+    <div id="iconbar">
+        <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur corrupti libero est voluptates alias rem consequuntur commodi iure sit? Fugit aspernatur odit commodi qui tempore accusamus repudiandae, vero facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, et! Labore inventore odio fugiat. Dolor saepe possimus aperiam nesciunt, at est aliquid in rem sed itaque quisquam ab? Placeat, soluta?
+    </p>
+</body>
+</html>
+
+<!-- 카페에 소스 있음. -->

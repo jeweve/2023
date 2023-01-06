@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃-메뉴포함 만들어보기</title>
+    <style>
+        #wrapper {
+            width: 800px;
+            overflow: hidden;
+        }
+
+        header {
+            background-image: url(img/bg.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 270px;
+            /* border: 1px solid red; */
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 800px;
+            height: 50px;
+            /* border: 1px solid red; */
+            background: #555;
+        }
+
+        li {
+            line-height: 50px;
+            float: left;
+            color: #fff;
+            margin: 0 50px;
+        }
+
+        .left {
+            /* border: 1px solid red; */
+            float: left;
+            width: 70%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .left > img {
+            width: 530px;
+            height: 230px;
+            margin: 10px;
+        }
+
+        .aside {
+            /* border: 1px solid red; */
+            float: right;
+            width: 30%;
+            background: yellowgreen;
+        }
+
+        h1, h3, p {
+            margin: 10px;
+        }
+
+        .img {
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            width: 200px;
+        }
+        /* 절대픽셀이 먹는 조건 : 이미지 자체의 100% 픽셀값을 줘야함 이 이미지 width는 200px 이므로 저렇게 적어줘야 먹음 */
+
+        img {
+            margin-bottom: 5px;
+        }
+
+        .logo {
+            /* border: 1px solid red; */
+            width: 300px;
+            height: 120px;
+            float: right;
+            margin-top: 120px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .logo > h1 {
+            /* border: 1px solid red; */
+            color: #fff;
+            font-size: 35px;
+            
+            float: right;
+            margin: 0;
+        }
+
+        .logo > h2 {
+            /* border: 1px solid black; */
+            clear: both;
+            color: yellow;
+        }
+        /* h2에 clear:both 줬기때문에 h1에 margin:0; 주면 정렬 맞는다 */
+
+        footer {
+            clear: both;
+            background: #555;
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            color: #fff;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo">
+            <h1>Joandora</h1>
+            <h2>가장 제주다운 수산리집</h2>
+                <!-- <span style="color: yellow; font-size: 25px;">가장 제주다운 수산리집</span></h1> 이렇게 주면 안된다고 하심-->
+            </div>
+        </header>
+    
+    <div id="menu">
+        <ul>
+            <li>이용 안내</li>
+            <li>객실 소개</li>
+            <li>예약 방법</li>
+            <li>예약하기</li>
+        </ul>
+    </div>
+
+    <div id="section">
+        <div class="left">
+            <h1>요안도라 소개</h1>
+            <h3>＊요안도라는 게스트 하우스 형식의 농어촌 민박입니다</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, quod, commodi consequatur consectetur a laborum ipsa est magni voluptatibus vero facilis quas debitis quibusdam modi esse accusantium earum. Qui, iure?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, quod, commodi consequatur consectetur a laborum ipsa est magni voluptatibus vero facilis quas debitis quibusdam modi esse accusantium earum. Qui, iure?
+            </p>
+
+            <img src="img/banner2.png">
+        </div>
+        
+        <div class="aside">
+            <h4>＊알려드립니다</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat incidunt totam? Minus obcaecati ad veniam ducimus magn</p>
+            
+            <div class="img">
+            <img src="img/2.jpg">
+            <img src="img/1.jpg">
+            <img src="img/4.jpg">
+            </div>
+        </div>
+        <footer>
+            Welcome
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
+
+<!-- float 주는거 잊지말자. float: left , float: right , clear:both; -->

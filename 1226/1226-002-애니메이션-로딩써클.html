@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 100px;
+        }
+        #circle {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 20px solid red ;
+            border-top: 20px solid yellow;
+            animation: circle 1s infinite linear;
+            /* animation-name: circle;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        @keyframes circle {
+            from {
+                transform: rotate(0deg);
+                /* left: 0; */
+            }
+            /* 25% {
+                top: 0;
+                left: 250px;
+            }
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+            75% {
+                top: 250px;
+                left: 0;
+            } */
+            to {
+                transform: rotate(360deg);
+                /* left: 0; */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+</body>
+</html>
+
+<!-- 1. border 위에 b0rder를 또 그릴 수 있다 -->
+<!-- 2. aonimation 주는 방법 알고 있기 -->
+<!-- 3. 교과서 477 page -->
+<!-- 1220-002-CSS애니메이션.html -->

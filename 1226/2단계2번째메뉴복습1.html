@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단계2번째메뉴복습</title>
+    <style>
+        .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 > li {
+            float: left;
+            border: 1px solid #555;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .cls001 li ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 li ul li {
+            border: 1px solid #555;
+            width: 120px;
+            height: 0px;
+            text-align: center;
+            line-height: 0px;
+            font-size: 0;
+            opacity: 0;
+            transition: 0.1s;
+        }
+
+        .cls001 li:hover ul li {
+            opacity: 1;
+            height: 30px;
+            line-height: 30px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML
+            <ul>
+                <li>HTML1</li>
+                <li>HTML2</li>
+                <li>HTML3</li>
+                <li>HTML4</li>
+            </ul>
+                </li>
+        <li>CSS</li>
+        <li>jquery</li>
+        <li>Javascript</li>
+    </ul>
+</body>
+</html>

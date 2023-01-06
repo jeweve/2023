@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        p {
+            width: 300px;
+            height: 200px;
+            background: yellow;
+            padding: 10px;
+            overflow: hidden;            
+        }
+/* overflow:는 따로 외우기 */
+        p::before {
+            content: "";
+            display: block;
+            clear: both;
+            width: 120px;
+            height: 20px;
+            background: red;
+        }
+        
+        p::after {
+            content: "";
+            display: block;
+            clear: both;
+            width: 120px;
+            height: 20px;
+            background: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cumque. Delectus consequatur sapiente ea at saepe deleniti quaerat eaque ipsum natus veritatis hic enim, perferendis exercitationem. Mollitia eligendi tempora illo.Lorem ipsum dolor sit amet consectetur adip</p>
+</body>
+</html>
+
+<br>
+외울것 :  <br>
+content: "" <br>
+display: block;<br>
+clear: both;<br>
+3개가 세트
+
+content:"";
+display:block;
+clear:both;

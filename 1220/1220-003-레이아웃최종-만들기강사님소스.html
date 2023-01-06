@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃 2단</title>
+    <style>
+      #wrapper {
+        margin: 0 auto;
+        width: 1000px;
+        overflow: hidden;
+      }
+      header {
+        width: 100%;
+        background-color: #f46075;
+        background-image: url(images/nav2.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        height: 160px;
+        padding-top: 30px;
+        box-sizing: border-box;
+      }
+
+      nav {
+        width: 600px;
+        height: 40px;
+        float: left;
+        /* border: 1px solid red; */
+        margin-top: 30px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0 0 0 40px;
+        padding: 0;
+      }
+
+      ul li {
+        color: #fff;
+        display: inline;
+        margin-right: 20px;
+        font-weight: 600;
+      }
+      section {
+        width: 65%;
+        float: left;
+      }
+      .box {
+        width: 300px;
+        height: 280px;
+        border: 1px solid #333;
+        float: left;
+        margin: 10px;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+
+      aside {
+        /* border: 1px solid red; */
+        width: 25%;
+        float: right;
+        border: 1px solid #333;
+        margin-top: 75px;
+      }
+
+      img {
+        width: 100%;
+        overflow: hidden;
+      }
+      footer {
+        clear: both;
+        width: 100%;
+        height: 100px;
+        background: darkred;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;
+      }
+
+      .box1 {
+        background: orange;
+        transition: 2s;
+
+      }
+
+      .box1:hover {
+        background: darkorange;
+      }
+
+      
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li>애완견 종류</li>
+            <li>입양하기</li>
+            <li>건강돌보기</li>
+            <li>더불어살기</li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h1>강아지 용품 준비하기</h1>
+        <div class="box box1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+          necessitatibus dolor nisi laudantium sint animi enim eveniet veritatis
+          in officiis, iusto quidem. Ullam illo autem quaerat accusantium ad
+          nisi impedit.
+        </div>
+        <div class="box box2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+          reprehenderit velit animi natus debitis optio at exercitationem
+          dolorem, magni architecto deserunt quas reiciendis aspernatur quasi
+          quisquam hic labore! Nemo, culpa!
+        </div>
+        <div class="box box3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          dignissimos consequuntur ratione ab id aliquam sapiente deleniti esse
+          quaerat illo, quos alias recusandae dolor, ipsum dicta laborum
+          veritatis repudiandae. Nostrum!
+        </div>
+        <div class="box box4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          consectetur nostrum dolorem ut, illo atque alias hic minus nisi
+          aliquid laboriosam quasi, voluptate, ea numquam! Omnis magnam rem quis
+          dignissimos.
+        </div>
+      </section>
+      <aside>
+        <img src="images/1.png" alt="" />
+        <img src="images/2.png" alt="" />
+        <img src="images/3.png" alt="" />
+      </aside>
+      <footer>
+        <span>Copyright 2012 funnycom</span>
+      </footer>
+    </div>
+  </body>
+</html>

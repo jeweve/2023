@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:before :after</title>
+    <style>
+        p {
+            width: 300px;
+            height: 200px;
+            background: yellow;
+            padding: 10px;
+        }
+
+        p:before {
+            content:"";
+            display: block;
+            clear: both;
+            /* color: red; */
+            width: 120px;
+            height: 10px;
+            background: red;
+        }
+        /* content:"오늘은 목요일";
+            display: block;
+            clear: both; >>하나의 세트다! */
+
+        p:after {
+            content:"";
+            display: block;
+            clear: both;
+            /* color: blue; */
+            width: 150px;
+            height: 10px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <p> natus sunt. Explicabo optio vero accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae ea, exercitationem fugit ipsum deleniti iure debitis odit totam cupiditate, porro quia voluptatibus culpa, natus sunt. Explicabo optio vero accusamus?</p>
+</body>
+</html>

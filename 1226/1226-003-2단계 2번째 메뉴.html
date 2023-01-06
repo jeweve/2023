@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단계 2번째 메뉴</title>
+    <style>
+        /* display: none; -> transition 안먹는다 */
+
+        .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 > li {
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid #555;
+            float: left;
+        }
+
+        .cls001 li ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 li ul li {
+            width: 120px;
+            height: 0px;
+            text-align: center;
+            line-height: 0px;
+            border: 1px solid #555;
+            opacity: 0;
+            font-size: 0;
+            /* 폰트가 안보인다는 뜻 */
+            transition: 0.1s;
+            /* color: black; */
+            /* 컬러는 디폴트값이 블랙이므로 안줘도 됨 */
+        }
+
+        .cls001 li:hover ul li {
+            opacity: 1;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <!-- ul이 2개이므로 구분하기 위해 -->
+        <li>HTML
+            <ul>
+                <li>HTML1</li>
+                <li>HTML2</li>
+                <li>HTML3</li>
+                <li>HTML4</li>
+            </ul>
+
+        </li>
+        <li>CSS
+
+        </li>
+        <li>jquery
+
+        </li>
+        <li>Javascript
+
+        </li>
+    </ul>
+</body>
+</html>

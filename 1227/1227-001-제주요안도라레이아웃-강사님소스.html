@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요안도라</title>
+    <style>
+        #wrapper {
+            width: 960px;
+            overflow: hidden;
+        }
+        header {
+            width: 960px;
+            height: 330px;
+            background: url(../1226/img/bg.png) no-repeat;
+            background-size: 960px 280px;
+            position: relative;
+
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+            background: darkred;
+            position: absolute;
+            top: 280px;
+            left: 0;
+            line-height: 50px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            color: #fff;
+            margin-right: 110px;
+            cursor: pointer;
+        }
+
+        li:first-child {
+            margin-left: 80px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        li a:hover {
+            color: orange;
+        }
+
+        h1 {
+            margin: 0;
+            color: beige;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            font-size: 42px;
+            position: absolute;
+            right: 10px;
+            bottom: 150px;
+        }
+
+        .cls001 {
+            color: yellow;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 20px;
+            position: absolute;
+            right: 10px;
+            bottom: 90px;
+        }
+
+        section {
+            width: 720px;
+            float: left;
+            margin-right: 20px;
+            overflow: hidden;
+            background: #666;
+            box-sizing: border-box;
+            padding: 30px;
+            background: #eee;
+        }
+
+        aside {
+            width: 220px;
+            height: 650px;
+            background: greenyellow;
+            float: right;
+            box-sizing: border-box;
+            padding: 50px 10px 70px 10px;
+        }
+
+        .cls003 {
+            margin-left: 10px;
+            width: 700px;
+            height: 233px;
+        }
+
+        .cls002 {
+            font-size: 14px;
+            
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        #img {
+            width: 200px;
+            margin: 0 auto;
+        }
+        .cls004 {
+            font-size: 14px;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Joandora</h1>
+        <p class="cls001">가장 제주다운 수산리집</p>
+        <nav>
+            <ul>
+                <li><a href="#">이용 안내</a></li>
+                <li><a href="#">객실 소개</a></li>
+                <li><a href="#">예약 방법</a></li>
+                <li><a href="#">예약하기</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>요안도라 소개</h2>
+        <h3>¤ 요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다</h3>
+        <p class="cls004">성산의 날씨는 다음주 내내 높은 구름에 햇살 가득이라고 합니다. 목요일이면 섭씨 27도까지 오른다고 하지만, 늘 부는 바람이 쾌적한 균형을 잡아 마당에 마당에 나가 앉아 있는 시간이 많아질듯 합니다.</p>
+
+            <p class="cls004">오늘은 사진에 보이는 긴 돌담을 따라 들어오는 요안도레 올레 입구에 특곤색의 대문을 달았습니다.</p>
+            
+            <p class="cls004">내일은 두달 여동안 밖거리에 만든 데스트 하우스에 연백색의 황토 페인트를 칠할 예정입니다. 
+            그리고 이것저것 사소한 저이를 마치고 나면, 나이 드시고 젊고 한 미지의 새식구들을 설렘으로 만나고 함께하고, 도시의 바븐 생활로 소원해진 오래된 친구와의 우정을 이 제주에서 새롭게 열어나가기 위해 요안도라를 세상에 알리려고 합니다.</p>
+        <img src="../1226/img/banner2.png" alt="" class="cls003">    
+    </section>
+    <aside>
+        <h3>¤ 알립니다</h3>
+        <p class="cls002">게스트하우스 예약은 전화 070-###-#### 로 직접 통화하시는게 가장 정확하고 빠릅니다. 인터넷 전화이므로 시외 전화 요금이 부과되지 않습니다.</p>
+        <div id="img">
+            <img src="../1226/img/2.jpg" alt="">
+            <img src="../1226/img/1.jpg" alt="">
+            <img src="../1226/img/4.jpg" alt="">
+        </div>
+    </aside>
+    </div>
+</body>
+</html>
+
+<!-- header안에 nav 넣기 저자는 빼놓음 -->
+<!-- li한테 a링크 주기 -->
+<!-- 이미지는 주로 %보다 px로 값을 준다 -->
+<!-- li {
+    1. display:inline-block;
+    2. float:left;
+    둘 중에 하나 골라서 값 주기
+} -->
+
+<!-- 카페에 소스 있음 -->

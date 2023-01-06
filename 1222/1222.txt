@@ -1,0 +1,50 @@
+1222
+
+섹션은 저작권이 있는것, 없는건 아티클을 쓴다
+"독점" -> 섹션,
+퍼가도 된다고 되는건 -> 아티클
+
+
+-------
+
+선택자 추가부분:
+
+ul li:first-child {
+    font-size: 60px;
+    color: red;
+}
+<!-- 첫번째만 지정 -->
+ul li:last-child {
+    font-size: 60px;
+    color: red;
+}
+<!-- 마지막만 지정 -->
+
+
+
+ul li {
+            color: red;
+            font-size: 40px;
+        }
+        /* 하위 선택자 */
+
+        /* .cls001 + li {
+            color: red;
+            font-size: 40px;
+        } */
+        /* ~ : 형제선택자 */
+        /* + : 바로 다음요소를 잡는 인접형제선택자 */
+
+
+---------------------
+body에 붙이기>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o4wThiKoNMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+유튜브 영상 퍼올때.
+
+공유 -> < >퍼가기 -> 소스 복사
+
+
+------------
+
+2단 레이아웃

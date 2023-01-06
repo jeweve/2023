@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애플메뉴해보기</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid black; */
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 400px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        header {
+            margin: 50px;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .logo > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav > ul > li {
+            margin-bottom: 15px;
+        }
+
+        nav > ul > li > a {
+            color: black;
+            text-decoration: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#">Basic Responsive Menu</a>
+            </div>
+            <a href="#" class="mobile_tab"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">learn HTML5</a></li>
+                    <li><a href="#">learn CSS3</a></li>
+                    <li><a href="#">learn Responsive</a></li>
+                    <li><a href="#">learn JavaScript</a></li>
+                    <li><a href="">learn jQuery</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
+
+
+<!-- position: fixed
+height : 100% -->

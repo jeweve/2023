@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미니멀 네비게이션</title>
+    <style>
+      body {
+        margin: 20px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #555;
+        color: #000;
+      }
+
+      .title {
+        font-size: 1.5em;
+        color: #000;
+      }
+
+      .container {
+        margin-top: 35px;
+        position: relative;
+        min-width: 320px;
+      }
+
+      #navigationMenu li {
+        padding: 2px;
+        width: 40px;
+        height: 39px;
+      }
+
+      #navigationMenu li a {
+        display: block;
+        position: relative;
+        width: 38px;
+        height: 39px;
+        background: url(navigation.jpg) no-repeat;
+        transition: 0.3s;
+        color: black;
+      }
+
+      #navigationMenu a:hover span {
+        padding: 0 20px;
+        width: auto;
+      }
+
+      #navigationMenu a:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #navigationMenu span {
+        position: absolute;
+        padding: 0;
+        overflow: hidden;
+        left: 38px;
+        width: 0;
+        line-height: 39px;
+        text-transform: uppercase;
+        /* uppercase 대문자 */
+        white-space: nowrap;
+        font-size: 0.875em;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      #navigationMenu .home {
+        background-position: 0 0;
+      }
+
+      #navigationMenu .home:hover {
+        background-position: 0 -39px;
+      }
+
+      #navigationMenu .home:hover span {
+        background: #8ac007;
+        color: #3d4f0c;
+      }
+
+
+      #navigationMenu .about {
+        background-position: -38px 0;
+      }
+
+      #navigationMenu .about:hover {
+        background-position: -38px -39px;
+      }
+
+      #navigationMenu .about:hover span {
+        background: #8ac007;
+        color: #3d4f0c;
+      }
+
+
+      #navigationMenu .services {
+        background-position: -76px 0;
+      }
+
+      #navigationMenu .services:hover {
+        background-position: -76px -39px;
+      }
+
+      #navigationMenu .services:hover span {
+        background: #8ac007;
+        color: #3d4f0c;
+      }
+
+
+      #navigationMenu .portfolio {
+        background-position: -114px 0;
+      }
+
+      #navigationMenu .portfolio:hover {
+        background-position: -114px -39px;
+      }
+
+      #navigationMenu .portfolio:hover span {
+        background: #8ac007;
+        color: #3d4f0c;
+      }
+
+
+      #navigationMenu .contact {
+        background-position: -152px 0;
+      }
+
+      #navigationMenu .contact:hover {
+        background-position: -152px -39px;
+      }
+
+      #navigationMenu .contact:hover span {
+        background: #8ac007;
+        color: #3d4f0c;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 class="title">CSS3 Minimalistic Navigation</h1>
+    <div class="container">
+      <ul id="navigationMenu">
+        <li>
+          <a class="home" href="#"><span>Home</span></a>
+        </li>
+        <li>
+          <a class="about" href="#"><span>About</span></a>
+        </li>
+        <li>
+          <a class="services" href="#"><span>Services</span></a>
+        </li>
+        <li>
+          <a class="portfolio" href="#"><span>Portfolio</span></a>
+        </li>
+        <li>
+          <a class="contact" href="#"><span>Contact us</span></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

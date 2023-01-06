@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜스폼</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background: yellow;
+            border: 2px solid black;
+            transition: 0.6s;
+            /* 시간이란개념 */
+        }
+
+        div:hover {
+            transform: translate(250px);
+            /* transform: rotate(540deg); */
+            /* transform: skew(60deg); */
+            /* transform:  skew(-60deg); */
+            /* transform: skewY(60deg); */
+            /* transform: skewY(-60deg); */
+            /*> -60deg를 주면 반대로 됨 */
+            /*> skewY Y축으로  > skewY(60deg), skewY(-60deg) */
+            /* transform: scale(0.5); */
+            /* transform: scale(1.5); */
+            /* scal(0.5)>축소 , 1.5>확대 */
+            /* transform: translateX(-150px); */
+            /* transform: translateY(-150px); */
+            /* -음수면 바깥으로 나간다, +면 안으로 들어온다 */
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+<!-- 트랜스폼
+
+1.translate 이동 > 150px , -130px
+2.skew 비틀기 > 45deg
+3.rotate 회전 > 270deg
+4.scale 크기조정 > 1.5 , 05 -->

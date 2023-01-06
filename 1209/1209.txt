@@ -1,0 +1,156 @@
+1209
+---------
+
+CSS의 위치값에 따른 우선순위
+
+-----------
+
+link:css ->하면 외부시트 불러오기 가능하다
+
+우선순위 : 외부<내부<인라인<important
+important는 정말 중요할 때만 쓴다.
+
+1208-005-css이어서.html
+1208-005-css이어서2.html
+#style.css <외부시트로 빼기위해 저장한것. 저장할때 이름.css라고 저장함.>
+
+
+1. 외부시트로 저장하는 법
+2. 외부시트를 내부시트로 불러오는 법 : link
+3. 인라인스타일시트 쓰는 방법 : style {
+                                                : ;  
+                                                  }
+
+
+
+
+--------------------
+1. 백그라운드 이미지
+
+
+명령 먹일 태그:lvha <- 외우기. 순서대로 적어야한다!
+
+-------------------------
+문제
+Q.
+1.facebook
+2.microsoft
+3.apple
+4.google
+폰트어썸을 이용해서 4개의 아이콘을 끌어옵니다.
+
+아이콘의 색상은 #333이고 hover했을때 yellow로 바뀌게 해주시고
+링크를 다음넷으로 걸어주세요.
+
+*CDN->폰트어썸코드(카페에있는거) : 
+<script src="https://kit.fontawesome.com/acc6245ef7.js" crossorigin="anonymous"></script>
+
+A.
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제</title>
+    <style>
+        a:link {
+            text-decoration: none;
+            color: #333;
+        }
+        a:visited {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        i:hover {
+            color: yellow;
+        }
+    /* a에 hover를 줄 필요가 없으므로 i:hover라고 주고 컬러 주는것 */
+    </style>
+    <script src="https://kit.fontawesome.com/acc6245ef7.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+    <a href="https://www.daum.net/"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.daum.net/"><i class="fa-brands fa-microsoft"></i></a>
+    <a href="https://www.daum.net/"><i class="fa-brands fa-apple"></i></a>
+    <a href="https://www.daum.net/"><i class="fa-brands fa-google"></i></a>
+</body>
+</html>
+
+
+---------------------------------------
+
+Q. 
+width : 100px;
+height:80px;
+padding: 24px;
+margin: 9px;
+border: 2px;
+
+전체폭은 몇픽셀일까요??
+.
+A.
+100+24+24+2+2=152
+
+
+box-sizing: border-box;를 입혀주면 픽셀 계산할 필요없다
+
+
+----------------------
+
+Q. 표만들기
+
+A. 
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE 문제</title>
+    <style>
+        table {
+            border: 1px solid #ccc;
+            width: 600px;
+            height: 120px;
+        }
+
+        th {
+            width: 120px;
+        }
+        
+        td, th {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>이름</th>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+            
+            
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+            
+            
+        </tr>
+    </table>
+</body>
+</html>
+
+th에만 width: 120px; 주기
+colspan** 주는거 이해하고 외우기!!
+

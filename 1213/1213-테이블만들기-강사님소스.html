@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        table {
+            width: 700px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }        
+
+        tr:nth-child(2n+1) {
+            background: #ccc;
+        }
+
+        tr {
+            height: 30px;
+            padding: 5px;
+        }
+
+        .cls001 {
+            width: 50px;
+        }
+
+        .cls002 {
+            width: 400px;
+        }
+
+        .cls003 {
+            width: 75px;
+        }
+
+        .cls004 {
+            width: 75px;
+        }
+
+        .cls005 {
+            width: 75px;
+        }
+
+        td {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        caption {
+            font-weight: 600;
+            margin-bottom: 30px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        
+        /* td {
+            background: -webkit-linear-gradient(to top, red, yellow);
+            background: -moz-linear-gradient(to top, red, yellow);
+            background: linear-gradient(to top, red, yellow);
+        } */
+    </style>
+</head>
+<body>
+    <table>
+        <caption>자유게시판</caption>
+        <tr>
+            <th class="cls001">번호</th>
+            <th class="cls002">제목</th>
+            <th class="cls003">글쓴이</th>
+            <th class="cls004">조회수</th>
+            <th class="cls005">좋아요</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>오늘은 눈이 온다 휴~~</td>
+            <td>김종한</td>
+            <td>45</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

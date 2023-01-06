@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습</title>
+    <style>
+        .a {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .a > li {
+            border: 1px solid #555;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+        }
+
+        .a li ul li {
+            border: 1px solid #555;
+            width: 120px;
+            height: 0px;
+            line-height: 0px;
+            text-align: center;
+            opacity: 0;
+            transition: 0.2s;
+            font-size: 0;
+        }
+
+        .a li:hover ul li {
+            opacity: 1;
+            height: 30px;
+            line-height: 30px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="a">
+        <li>강지우
+            <ul>
+                <li>1988</li>
+                <li>04</li>
+                <li>18</li>
+                <li>35살</li>
+            </ul>
+        </li>
+        <li>화이팅
+
+        </li>
+        <li>할수있어
+
+        </li>
+        <li>잘하고있어
+
+        </li>
+    </ul>
+</body>
+</html>

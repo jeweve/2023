@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <!-- 표를 예쁘게 꾸밀 수 있다 -->
+    <style>
+        li:nth-child(2n+2) {
+            color: red;
+            font-size: 25px;
+        }
+        /* odd : 홀수 이건 그냥 외우는거! */
+        /* even : 짝수 <<<이건 그냥 외우는거! */
+        /* li:nth-child(n) <<< 이건 그냥 외우는거! */
+        /* 2n+1.... >> 홀수 잡는거 <<<이건 그냥 외우는거!*/
+        /* 2n+2....>> 짝수 잡는거 <<<이건 그냥 외우는거!*/
+    </style>
+</head>
+<body>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ol>
+</body>
+</html>

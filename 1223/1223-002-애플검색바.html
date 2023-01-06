@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애플 검색바</title>
+    <style>
+
+        input[type="text"]:focus {
+            width: 250px;
+        }
+        /* 250px로 늘어나게 하겠다는 명령임 */
+
+        input[type="text"] {
+            transition: 0.5s;
+            width: 120px;
+            box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
+            /* 꼭 외울것 : inset이라고 입력하면 안쪽에 shadow가 생긴다 */
+            border-radius: 10px;
+            padding-left: 20px;
+            background: #ccc;
+        }
+        /* input일때 [type="tex"] 괄호를 쓴것은 규칙이기때문에 그냥 외울것 */
+        /* focus : 커서를 입력했을 때 (tab키 또한.) >>장애인을 고려한 측면이다 */
+    </style>
+</head>
+<body>
+    <form action="action.php">
+        <!-- action.php >> 해당 검색창에 대하여 처리할 백엔드 프로그램의 명이다. 굳이 외울필요 없다. 비워놔도 된다 -->
+        <input type="text" id="apple" placeholder="Search">
+    </form>
+</body>
+</html>
+
+<!-- 카페에 애플검색바 소스 있음 -->

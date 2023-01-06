@@ -1,0 +1,8 @@
+1219
+float: left, float: right
+clear: both를 주면 위에서 사용했던 float이 해제되어진다...
+책에는 clear: left right를 주라고 나오지만 실무에선 그렇게 안쓴다.
+
+header
+메뉴
+16개박스:div1묶음 aside:div2묶음

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이드메뉴만들기</title>
+    <script src="https://kit.fontawesome.com/acc6245ef7.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        ul {
+            /* border: 1px solid red; */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        li {
+            /* border: 1px solid black; */
+            padding: 10px;
+            background: #555;
+            width: 30px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* .a {
+            background: rgb(150, 214, 55);
+        } */
+
+        li:first-child {
+            background: yellowgreen;
+        }
+
+        li:hover {
+            color: #fff;
+            cursor: pointer;
+            background: rgb(29, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <a href="http://www.naver.com"><li><i class="fa-solid fa-house"></i></li></a>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-envelope"></i></li>
+        <li><i class="fa-solid fa-earth-americas"></i></li>
+        <li><i class="fa-solid fa-trash-can"></i></li>
+    </ul>
+    
+</body>
+</html>

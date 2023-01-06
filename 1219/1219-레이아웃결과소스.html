@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        #wrapper {
+            width: 80%;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            width: 80%;
+            height: 150px;
+            background: dodgerblue;
+            margin: 0 auto;
+        }
+        #logo {
+            float: left;
+            width: 250px;
+            height: 100px;
+            margin: 20px 0 0 10px;
+        }
+
+        nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+            width: 450px;
+            height: 50px;
+            margin-top: 50px;
+            /* border: 1px solid black; */
+        }
+
+        nav > ul >li {
+            display: inline-block;
+            margin-right: 20px;
+            color: #fff;
+            cursor: pointer;
+            /* border: 1px solid black; */
+        }
+
+        .cls001 {
+            width: 90%;
+            overflow: hidden;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 40px 0 40px 15px;
+        }
+
+        dt {
+            font-weight: 600;
+            font-size: 17px;
+            color: purple;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        footer {
+            /* clear: both; */
+            height: 80px;
+            width: 80%;
+            background: #333;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        span {
+            color: #fff;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>애완견 종류</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>애완견 종류</li>
+                <li>입양하기</li>
+                <li>건강돌보기</li>
+                <li>더불어살기</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <h2>활달한 강아지</h2>
+        <dl class="cls001">
+            <dt>요크셔 테리어</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi id quibusdam necessitatibus harum, odit fugit facere eos dolorum doloremque animi veniam ea natus maxime qui atque earum repellendus iusto. Facilis!</dd>
+            <dt>말티즈</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi id quibusdam necessitatibus harum, odit fugit facere eos dolorum doloremque animi veniam ea natus maxime qui atque earum repellendus iusto. Facilis!</dd>
+            <dt>포메 라이언</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi id quibusdam necessitatibus harum, odit fugit facere eos dolorum doloremque animi veniam ea natus maxime qui atque earum repellendus iusto. Facilis!</dd>
+            <dt>골든 리트리버</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi id quibusdam necessitatibus harum, odit fugit facere eos dolorum doloremque animi veniam ea natus maxime qui atque earum repellendus iusto. Facilis!</dd>
+        </dl>
+        <h2>건강한 강아지는</h2>
+        <ul class="cls002">
+            <li>코가 젖어있고 눈꼽이 없어야 합니다.</li>
+            <li>털에 윤기가 있는 것을 골라야 합니다.</li>
+            <li>입에서 고약한 냄새가 나면 병이 있다는 증거입니다.</li>
+            <li>가장 활발하게 움직이는 녀석을 고르는게 좋습니다.</li>
+            <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li>
+        </ul>
+        
+    </div>
+    <footer>
+            <span>Copyright 2012 funnycom</span>
+    </footer>
+</body>
+</html>
+
+
+<!-- h2와 footer 추가 부분 확인 -->

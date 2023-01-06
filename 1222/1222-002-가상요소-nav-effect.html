@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        /* 형제요소 집중해서보기 */
+
+        body {
+            margin: 20px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background: #555;
+        }
+
+        .nav {
+            width: 700px;
+            position: relative;
+            margin: 50px 0; 
+            /* margin: 50px 0; >> 50 0 50 0라는 뜻 */
+            overflow: hidden;
+            /*여기선 넘쳐난 영역에 대해서 안보이게 처리하겠다는 뜻 */
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+        
+        /* 아래...a태그는 무조건 block로 잡고 본다 */
+        .nav a {
+            display: block;
+            position: relative;
+            float: left;
+            padding: 16px 0 38px;
+            /* padding: 16px 0 38px; >> 16 0 38 0라는 뜻  >> 중요!*/
+            width: 20%;
+            /* 5개니까 20퍼센트 줌 */
+            text-decoration: none;
+            color: #fff;
+            transition: 0.6s;
+        }
+
+        .nav a:hover {
+            color: #8ac007;
+        }
+        
+        .effect {
+            position: absolute;
+            left: -10%;
+            /* left: 10%; */
+            /* -10은 바깥쪽으로 빼기 */
+            transition: 0.6s;
+            bottom: 15px;
+            width: 12px;
+            height: 12px;
+            margin-left: -6px;
+            /* width와 height의 반인 6에 -를 붙여서 주면 가운데로 딱 온다 */
+            border-radius: 50%;
+            /* 원 */
+            background: #8ac007;
+        }
+
+        .nav a:nth-child(1):hover ~ .effect {
+            left: 10%;
+        }
+
+        .nav a:nth-child(2):hover ~ .effect {
+            left: 30%;
+        }
+
+        .nav a:nth-child(3):hover ~ .effect {
+            left: 50%;
+        }
+
+        .nav a:nth-child(4):hover ~ .effect {
+            left: 70%;
+        }
+
+        .nav a:nth-child(5):hover ~ .effect {
+            left: 90%;
+        }
+
+        /* .nav a:nth-child(n):hover 했을 때 << ~ >> 형제 선택자인 .effect에게 다음 결과를 주겠다는 뜻 */
+        
+        /* width 가 20% (5개이므로) 이기때문에 20%씩 더한거 */
+
+        #tri {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid black;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid black;
+        }
+        /* transparent; : 투명한이란 뜻  > 삼각형 그리기*/
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">Javascript</a>
+        <a href="#">jQuery</a>
+        <a href="#">Portfolio</a>
+        <div class="effect"></div>
+    </div>
+
+    <div id="tri"></div>
+</body>
+</html>
+
+<!-- <div class="effect"></div> 가 <div class="nav">안에 들어가 있어야 형제요소 쓸 수 있다는 점! -->
+
+    <!-- 카페에 소스 있음  : 1222-001 인라인 메뉴-->

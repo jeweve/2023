@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자만들기</title>
+    <style>
+
+        /* image {
+            width: 100%;
+        } */
+
+        #box {
+            overflow: hidden;
+            width: 300px;
+        }
+
+        #box img {
+            /* border: 1px solid red; */
+            transition: 0.4s;
+            overflow: hidden;
+            width: 300px;
+            height: 150px;
+            display: block;
+
+        }
+
+        #box img:hover {
+            display: block;
+            cursor: pointer;
+            transform: scale(1.2);
+            width: 300px;
+            height: 150px;
+            overflow: hidden;
+
+            /* position: fixed; */
+            /* background-size: 120% 120%; */
+        }
+
+        .tex {
+            width: 300px;
+            text-align: center;
+        }
+        .tex:hover {
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        #box:hover + p {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+        
+        <div id="box"><img src="prod1.jpg"><p class="tex">그것이 알고싶다</p></div>
+        
+        
+</body>
+</html>

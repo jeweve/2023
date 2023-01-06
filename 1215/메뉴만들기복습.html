@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴만들기복습</title>
+</head>
+<style>
+    .cls001 {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .cls001 > li {
+        width: 120px;
+        height: 30px;
+        border: 1px solid #ccc;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .cls001 li ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cls001 li ul li {
+        width: 120px;
+        height: 30px;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .cls001 li:hover ul li {
+        display: block;
+    }
+</style>
+<body>
+    <ul class="cls001">
+        <li>HTML
+            <ul>
+                <li>HTML1</li>
+                <li>HTML2</li>
+                <li>HTML3</li>
+                <li>HTML4</li>
+                <li>HTML5</li>
+            </ul>
+        </li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+        <li>portfolio</li>
+    </ul>
+</body>
+</html>

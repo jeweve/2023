@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form태그와 인풋요소</title>
+</head>
+<body>
+    <form action="">
+        <h1>로그인</h1>
+        아이디: <input type="text"><br>
+        패스워드: <input type="password" autocomplete="off"><br><br>
+        <input type="submit" value="제출"> <input type="reset" value="초기화"><br><br>
+
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="datetime"><br>
+        <input type="datetime-local"><br><br>
+        <input type="range"><br><br>
+        <input type="week"><br>
+        <input type="number" step="5"><br>
+        <input type="file"><br>
+        <textarea name="" id="" cols="60" rows="15"></textarea>
+    </form>
+</body>
+</html>
+
+<!-- [textarea는 절때 줄 바꿈 하면 안됨. </textarea>가 뒤에 바로 붙어야함]
+[<textarea name="" id="" cols="60" row="15" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nulla in, magni quasi veritatis omnis esse fugit sint accusamus expedita ducimus repudiandae, velit nesciunt quae, numquam odit assumenda temporibus quas. 
+        </textarea>처럼 readonly 넣어주면 회원가입할때 나오는 약관처럼 만들 수 있다.
+[step="5"로 주면 5단계씩 올라간다]
+[week는 올해의 몇번째 주인지 알려준다]
+[range는 밝기]
+[datetime-local은 현지시간]
+[datetime은 사파리에서는 뜬다 : 즉, 사용하면 안됨]
+[value="제출,초기화" 해줘야 익스플로러에서 열었을때도 똑같이 열린다]
+[autocomplete="off"로 해준다.]
+[인풋은 아이디의 경우 autocomplete가 on이 디폴트인데 패스워드는 기억 안하는게 좋으므로 off로 써주는것] -->

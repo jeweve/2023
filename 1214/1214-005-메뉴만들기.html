@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴 만들기</title>
+    <style>
+        .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* 3개는 세트, 외우세요 */
+
+        .cls001 > li {
+            width: 120px;
+            height: 30px;
+            border: 1px solid #ccc;
+            line-height: 30px;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+        }
+        /* float 은 정렬.. */
+        /* 얘만 '>' 마크업을 사용한 이유... >> 뒤에 더이상 ul이 없기때문에..>>얘를 구분시켜 주기 위해서..>>.. */
+
+        .cls001 li ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* ul에는 3개를 똑같이 줘야함 간격 맞고, 블릿 없어짐 */
+
+        .cls001 li ul li {
+            width: 120px;
+            height: 30px;
+            border: 1px solid #ccc;
+            line-height: 30px;
+            /* float: left; */
+            text-align: center;
+            cursor: pointer;
+            display: none;
+        }
+
+        .cls001 li:hover ul li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML
+            <ul>
+                <li>HTML1</li>
+                <li>HTML2</li>
+                <li>HTML3</li>
+                <li>HTML4</li>
+            </ul>
+        </li>
+        <li>CSS
+
+        </li>
+        <li>Javascript
+
+        </li>
+        <li>jQuery
+
+        </li>
+    </ul>
+</body>
+</html>
+
+<!-- 카페에 메뉴 만들기 소스 있음. -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        #wrapper {
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            background: dodgerblue;
+        }
+        #logo {
+            float: left;
+            width: 250px;
+            height: 100px;
+        }
+
+        nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+            width: 450px;
+            height: 50px;
+            margin-top: 50px;
+            /* border: 1px solid black; */
+        }
+
+        nav > ul >li {
+            display: inline-block;
+            margin-right: 20px;
+            color: #fff;
+            cursor: pointer;
+            /* border: 1px solid black; */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <h1>애완견 종류</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>애완견 종류</li>
+                    <li>입양하기</li>
+                    <li>건강돌보기</li>
+                    <li>더불어살기</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
+
+<!-- 카페에 올려주심 -->
+
+<!-- 시멘틱 태그 공부하기! / header , nav , ...-->

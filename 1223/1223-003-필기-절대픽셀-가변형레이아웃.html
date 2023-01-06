@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Fluid Grid Layout</title>
+<style>
+	
+	#wrapper {
+		width:96%;
+		margin:0 auto;
+	}
+	header {  /* 헤더 */
+		width:100%;
+		height:120px;
+		background-color:#066cfa;
+		border-bottom:1px solid black;
+	}
+	.header-text{
+		font-size:40px;
+		color:white;
+		text-align:center;
+		line-height:120px;
+	}
+	.content {   /* 본문 */
+		float:left;
+		width:62.5%;
+        /* <!-- 계산법 : 노트 필기에 있음
+     600 나누기 960 곱히가 100 = 결과값 --> */
+	 /* (600px ÷ 960px) X 100 = 62.5% */
+		height:400px;	
+		padding:1.5625%;
+		/* (15px ÷ 960px) X 100 = 1.5625% */
+        /* 패딩도 똑같이 계산해준다 */
+		background-color:#ffd800;
+	}
+	.right-side {  /* 사이드 바 */
+		float:right;
+		width:31.25%;
+        /* (300px ÷ 960px) X 100 = 31.25% */
+		height:400px;
+		padding:1.5625%;
+		/* (15px ÷ 960px) X 100 = 1.5625% */
+		background-color:#00ff90;
+	}
+	footer {  /* 푸터 */
+		clear:both;
+		height:120px;
+		background-color:#c3590a;
+		padding:1.5625%;
+		box-sizing: border-box;
+	}
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1 class="header-text">고정 그리드 레이아웃</h1>
+		</header>
+		<section class="content">
+			<h4>본문</h4>
+		</section>
+		<aside class="right-side">
+			<h4>사이드바</h4>
+		</aside>
+		<footer>
+			<h4>푸터</h4>
+		</footer>
+	</div>
+</body>
+</html>
+
+<!-- 절대픽셀을 %로 바꾸기 : 확대 축소했을때 변하지 않게 -->
+<!-- 카페에 고치기 전 소스 있음 -->
+
+<!-- (가변 크기로 만들 박스의 가로 너비 ÷ 가변 크기로 만들 박스를 감싸고 있는 박스의 가로 너비) X 100 = 가변 크기의 % 값 -->

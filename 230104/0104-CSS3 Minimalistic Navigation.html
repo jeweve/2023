@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Minimalistic Navigation</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            background: #555;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        .container ul {
+            list-style: none;
+            /* border: 1px solid red; */
+            padding: 0;
+        }
+
+        .container ul li {
+            /* border: 1px solid white; */
+            margin-bottom: 10px;
+            width: 38px;
+            height: 39px;
+            position: relative;
+            padding: 4px;
+            
+            
+        }
+        .container ul li a {
+            display: block;
+            /* border: 1px solid yellow; */
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+            color: black;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            width: 38px;
+            height: 39px;
+            transition: 0.6s;
+        }
+
+        span {
+           position: absolute;
+           left: 38px;
+           display: none;
+           width: auto;
+           height: 39px;
+
+        }
+
+        .container ul li a:hover span {
+            display: block;
+            overflow: visible;
+            line-height: 39px;
+            width: auto;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+        }
+
+
+        .home {
+            background: url(navigation.jpg);
+        }
+        .about {
+            background: url(navigation.jpg);
+            background-position: -38px 0;
+        }
+
+        .services {
+            background: url(navigation.jpg);
+            background-position: -76px 0;
+        }
+        .portfolio {
+            background: url(navigation.jpg);
+            background-position: -114px 0;
+        }
+        .contact {
+            background: url(navigation.jpg);
+            background-position: -152px 0;
+        }
+
+    
+        .container ul li:hover .home{
+            background-position: 0 -39px;
+        }
+
+        .container ul li:hover .about{
+            background-position: -38px -39px;
+        }
+
+        .container ul li:hover .services{
+            background-position: -76px -39px;
+        }
+
+        .container ul li:hover .portfolio{
+            background-position: -114px -39px;
+        }
+
+        .container ul li:hover .contact{
+            background-position: -152px -39px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">CSS3 Minimalistic Navigation</h1>
+<div class="container">
+	<ul id="navigationMenu">
+		<li><a class="home" href="#"><span>Home</span></a></li>
+		<li><a class="about" href="#"><span>About</span></a></li>
+		<li><a class="services" href="#"><span>Services</span></a></li>
+		<li><a class="portfolio" href="#"><span>Portfolio</span></a></li>
+		<li><a class="contact" href="#"><span>Contact us</span></a></li>
+	</ul>
+</div>
+</body>
+</html>
+
+<!-- 힌트 : 
+백그라운드포지션이 올라가야함 -> 트랜지션.. 
+호버했을 때 하나당 x축의 위치는 0픽셀 38px 76px 114px 152px
+y축은 계속해서 -39px
+
+0 -39
+
+-38px -39px
+
+ul>li로 만들기 -->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버효과-선택자복습2</title>
+    <style>
+        #box {
+            background: url(prod1.jpg) no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            width: 300px;
+            height: 200px;
+            transition: 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        p {
+            position: absolute;
+            top: 100%;
+            cursor: pointer;
+        }
+
+        #box:hover {
+            background-size: 120% 120%;
+        }
+
+        p:hover {
+            text-decoration: underline;
+        }
+
+        #box:hover p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>목요일 잘 버티기</p>
+    </div>
+</body>
+</html>

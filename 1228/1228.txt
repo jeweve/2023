@@ -1,0 +1,77 @@
+1228
+
+-----------
+
+flex - 책 16장 >> 카페에 자료 있음 zip파일.
+
+http://www.css-validator.org/validator.html.ko#validate_by_upload > 웹표준검사 사이트
+시험볼때 웹표준에 어긋나면 1점씩 감점됨
+
+ex) h1 순서대로 쓰는거..h1이 없는데 h2가 갑자기 먼저 나올수 없다 > 이런거...
+----------------
+1. display:flex;
+*!* flex는 반드시 부모요소에 들어가야한다 그래야 자식들이 flex를 상속받는다 *!*
+flex는 균등분배 성질을 가지고 있다
+
+2. flex-direction: column; / column-reverse;
+
+1월 2번째 주...자바 들어갈것임
+
+3. flex-wrap: wrap; >>넘치는 영역을 다음칸으로 넘기겠다는 뜻
+
+
+4. flex-wrap: wrap-reverse;도 있음
+
+-ms-flex-wrap: wrap-reverse;
+인터넷익스플로러
+-webkit-flex-wrap: wrap-reverse;
+크롬 사파리 > 웹킷  
+>>자바에서 한줄만 넣어주면 되니까 신경 안써도 됨..알아만두세요
+
+5. order > 순서...
+
+#box1 {
+    order:1;
+}
+#box1 {
+    order:2;
+}
+#box1 {
+    order:3;
+}
+
+.
+.
+.
+
+justify-content 제일 많이 씀 외우기
+
+
+
+-------------
+
+
+반응형 웹 사이트 디자인 :
+
+모바일 퍼스트 : 모바일>태블린>PC
+PC 퍼스트 : PC>모바일쪽으로 옮겨가는거...
+
+대부분의 사이트는 모바일의 비중이 높다..모바일퍼스트를 더 많이 만든다..
+
+---------------
+http://pxtoem.com/
+
+
+----------
+
+float: none; 
+반응형일때 뚝 떨어진다!
+마이크로소프트사이트 크기 줄여보세요..
+-----
+
+flex 달달 외우기
+
+
+-----------
+만들어보기
+float: none

@@ -1,0 +1,78 @@
+1214
+
+Q. 
+가정용 꿀사과
+hn 태그 ; 확인하세요
+패딩있음
+
+
+주문 및 배송
+교환 및 환불
+고객센터 ; class : 폰트사이즈, 컬러
+
+오후 2시 이전 주문건은 당일 발송합니다 : 스팬으로 파란색 ; *인라인스타일시트
+스팬 : 폰트사이즈 콜론 몇픽셀 컬러 블루
+
+hr
+
+text-align: center;
+
+
+0000-0000 크기 조금 다름
+
+상담시간 : 크기 조금 다름
+
+----------------------------------------------------------
+
+video : audio
+
+controls >> 컨트롤바
+autoplay >> 자동재생 > 브라우저가 감당못해서 안먹히는 경우엔 muted를 써주면 먹힌다
+muted >> 음소거
+loop >> 무한반복재생
+
+
+
+/* margin-top, margin-left를 width와 height의 반값으로 준다 
+               margin-top이 height의 반값, margin-left가 width의 반값*/
+
+----------------------
+
+z-index : 포토샵의 레이어 개념과 같다...
+z-index는 반드시 position이 있는 상태에서만 작동한다...
+
+-------------------------------------------------
+reset.css , CSS Normalize, CSS RESET
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 맑은고딕, 굴림, 돋움;
+font-size: 16px;
+color: #333;
+line-heigth: 1.8
+}
+
+table {
+border-clooapse: collapse;
+}
+
+반복해서 적어 주어야 하는 속성을 한군데 몰아서 만들어 놓은 CSS파일
+
+->에릭 마이어의 reset.css
+
+반복.쓸데없는거.중복.긴거...개발자들이 싫어하는것들
+
+-------------------
+mp3, mp4
+
+인코딩하는 방법, 디코딩하는 방법
+>>mp3,mp4만드는 과정들...책에 나와있어도 볼 필요 없음..
+우리는 인코딩할 일이 없음..실무에서 안씀..
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 relative absolute</title>
+    <style>
+        #wrapper {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            /* relative대신 fixed를 넣어도 기준값이 되어질 수 있다 */
+            /* position: relative를 빼면 브라우저에서 확대축소했을때 위치가 깨진다 > 브라우저를 기준점으로 잡기 때문에.
+            *position: relative;를 넣어주면>relative를 기준점으로 잡기때문에 위치가 확대 축소해도 깨지지 않는다 */
+            border: 2px solid black;
+            margin: 0 auto;
+            /* margin: 0 auto 0 auto : top right bottom left */
+        }
+
+        #box1 {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0;
+            left:0;
+            }
+
+            #box2 {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0;
+            right:0;
+            }
+
+            #box3 {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            right:0;
+            }
+
+            #box4 {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            }
+
+            #box5 {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 150px;
+            left:150px;
+            }
+            
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+    </div>
+</body>
+</html>

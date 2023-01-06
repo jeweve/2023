@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백그라운드 이미지</title>
+    <style>
+        body {
+            background: url(001.jpg) no-repeat;
+            /* href,url,img,a태그... background는 url로 부른다*/
+            background-size: cover;
+            /* cover; 를 치면 바디에 꽉 차게 나타나게 된다. contain은 먹히지 않는다 cover와 contain의 차이점 : contain은 세로가 차버리면 가로가 더이상 늘어나지 않는다 커버는 가로가 다 찰때까지 키운다*/
+        }
+        /* 아래 외우기 lvha */
+        a:link {
+            text-decoration: none;
+            color: #eee;
+        }
+        /* 링크가 걸린부분 */
+        a:visited {
+            text-decoration: none;
+            color: #eee;
+        }
+        /* 한번이상 클릭한 링크부분 */
+        a:hover {
+            color: red;
+        }
+        /* 마우스를 오버했을때 */
+
+        a:active {
+            text-decoration: underline;
+        }
+        /* 마우스를 클릭한 순간 */
+        /* lvha (앞글자) 외우기!!! 순서대로 적어야한다*/
+    </style>
+</head>
+<body>
+    <!-- a태그 -->
+    <a href="#">링크를 걸어보세요</a>
+    <!-- #을 걸어줘야 맨위로 올라온다 그게 웹표준이다 시험볼때도! 기억하기 -->
+</body>
+</html>

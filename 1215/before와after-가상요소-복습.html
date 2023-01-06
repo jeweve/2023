@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before와 after-가상요소 복습</title>
+</head>
+<style>
+    p {
+        width: 300px;
+        height: 200px;
+        background: yellow;
+        padding: 10px;
+    }
+
+    p::before {
+        content: "";
+        display: block;
+        clear: both;
+        width: 200px;
+        height: 20px;
+        background: red;
+    }
+
+    p::after {
+        content: "";
+        display: block;
+        clear: both;
+        width: 100px;
+        height: 20px;
+        background: navy;
+    }
+</style>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni rerum delectus, praesentium corrupti, omnis molestiae recusandae voluptatem quos enim placeat est? Autem officiis distinctio temporibus asperiores, esse fugiat quod illum.</p>
+</body>
+</html>

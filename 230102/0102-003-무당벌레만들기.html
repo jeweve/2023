@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무당벌레 만들기</title>
+    <style>
+        .bug {
+            width: 300px;
+            height: 340px;
+            border-radius: 50%;
+            border: 1px solid black;
+            /* 아래...33%이후부터는 없애겠다는 뜻 */
+            background: -webkit-radial-gradient(center, black 30%, transparent 33%, transparent 100%),
+            -webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 35%, transparent 100%),-webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 35%, transparent 100%),-webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 33%, transparent 100%),-webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 33%, transparent 100%),-webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 35%, transparent 100%),-webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 35%, transparent 100%);
+            
+            background-repeat: no-repeat;
+            background-position: 110px 50px, 30px 90px, 160px 90px, 60px 170px, 140px 170px, 40px 260px, 160px 260px ;
+            /* y축은 값이 같고 x축만 다르다 */
+            background-size: 80px 80px, 110px 110px, 110px 110px, 110px 110px, 110px 110px, 110px 110px, 110px 110px;
+            transition: 0.6s;
+        }
+
+        .bug:hover {
+            background-position: center;
+        }
+
+        /* hover 했을때 transition 주면 틀린거다. 그 이전단계에서 transition 줘야한다 */
+    </style>
+</head>
+<body>
+    <div class="bug">
+        
+    </div>
+</body>
+</html>
+
+<!-- tip:래디얼그레디언트를 이용한다 radialGradient 
+7개의 점을 만들고 커다란 원 안에 들어가있어야한다
+호버했을때 백그라운드 포지션이 센터로 오면 된다  -->
+
+<!-- 아래 카페에 올라온 소스 -->
+
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풍뎅이 만들기</title>
+    <style>
+        .bug {
+            width: 290px;
+            height: 320px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            background: -webkit-radial-gradient(center, rgba(0,0,0,1) 30%, transparent 33%, transparent 100%),
+            -webkit-radial-gradient(center, black 50% , transparent 55%, transparent 100%),
+            -webkit-radial-gradient(center, black 50% , transparent 55%, transparent 100%),
+            -webkit-radial-gradient(center, black 40% , transparent 43%, transparent 100%),
+            -webkit-radial-gradient(center, black 40% , transparent 43%, transparent 100%),
+            -webkit-radial-gradient(center, black 45% , transparent 50%, transparent 100%),
+            -webkit-radial-gradient(center, black 45% , transparent 50%, transparent 100%);
+
+            background-repeat: no-repeat;
+            background-size: 80px 80px;
+            background-position: 105px 32px, 48px 96px, 160px 96px,144px 176px, 64px 176px, 176px 240px, 32px 240px;
+            transition: 0.6s;
+        }
+
+        .bug:hover {
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bug">
+        
+
+    </div>
+</body>
+</html> -->

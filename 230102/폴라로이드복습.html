@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폴라로이드복습</title>
+    <style>
+        body {
+            margin: 30px;
+            background: #e9e9e9;
+        }
+
+        div.polaroid {
+            border: 1px solid black;
+            padding: 10px 10px 20px 10px;
+            background: #fff;
+            width: 300px;
+            box-shadow: 10px 10px 5px #aaa;
+        }
+
+        div.rotate_left {
+            float: left;
+            transform: rotate(7deg);
+        }
+
+        div.rotate_right {
+            float: left;
+            transform: rotate(-8deg)
+        }
+
+        div.polaroid .box {
+            height: 250px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="polaroid rotate_left">
+        <div class="box"></div>
+        <p class="caption">해피한 2023~</p>
+    </div>
+
+    <div class="polaroid rotate_right">
+        <div class="box"></div>
+        <p class="caption">대박나세요~</p>
+    </div>
+</body>
+</html>

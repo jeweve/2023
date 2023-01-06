@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오 비디오 태그</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        /* 비디오를 전체창으로 스크롤바 생기지 않게 하면서 뜨게하는 방법 아래..외울것 */
+        video {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            /* min-width, min-height : 적어도~이상이란 뜻 */
+            left: 0;
+            top: 0;
+        }
+        /* 단위값을 적어줘야 적용이 되지만 0값은 안줘도 된다 */
+        div {
+            border: 1px solid white;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -75px;
+            margin-left: -75px;
+            /* margin-top, margin-left를 height와 width의 반값으로 준다 
+               margin-top이 height의 반값, margin-left가 width의 반값*/
+        }
+
+        #box {
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+            background: white;
+            opacity: 0.3;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 좌표 단위값을 %로 준 이유 >> 모든 모니터에서(해상도) 적용되게 하기 위해서 >>사용자가 FHD,QHD,4K인지 모르기때문에...그래서 %로 준다 */
+            /* 단위값 > % 와 PX의 개념을 잡자... */
+            margin-top: -30px;
+            margin-left: -75px;
+            /* z-index: 9999; */
+            /* z-index : 포토샵의 레이어 개념과 같다...
+            z-index는 반드시 "포지션"이 있는 상태에서만 작동한다... +값을 주면 위로 올라온다...-를 주면 내려가겠죠..*/
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video src="[MV] Taylor Swift-Shake It Off.mp4" controls autoplay muted loop></video>
+    <!-- controls : 컨트롤바 생긴다
+    autoplay : 자동재생 but 브라우저가 못받아들여서 자동재생이 안된다 but muted를 넣으면 자동재생이 된다 대신 muted된 상태에서 된다 
+    loop를 넣으면 무한반복재생이 된다 외울것.
+    controls / autoplay / muted / loop -->
+    <!-- mp3 와 mp4는 배포 금지! -->
+    <!-- 오디오도 똑같은 속성이다 -->
+    <div id="box">
+        <p>ENTER</p>
+    </div>
+</body>
+</html>

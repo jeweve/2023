@@ -1,0 +1,377 @@
+1207
+
+구글폰트 https://fonts.google.com/?query=nanum
+폰트어썸 https://fontawesome.com/
+------------
+앵커건게 부드럽게 굴러가게 하는 소스
+<style>
+ body {
+            scroll-behavior: smooth;
+        }
+</style>
+
+---------------------
+
+1.웹폰트
+
+시스템 폰트 : os 윈도우 맥운영체제를 설치함과 동시에
+디폴트로 시스템에 설치되어지는 폰트
+
+굴림 굴림체 궁서 궁서체 돋움 돋움체 맑은고딕 
+
+맥의 경우 애플고딕 : 산돌
+------------------------
+웹폰트 : 구글 검색 : Early Access - Google Fonts 사이트
+홈 아이콘 눌러서 들어가고 nanum 으로 검색
+
+폰트 + 로 다운받고 오른쪽 상단 4등분 네모 누르면 소스? 뜸
+Selected family
+
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+font-family: 'Nanum Pen Script', cursive;
+
+그거 복사
+
+CDN : Content Delivery Network
+
+++++++++++++++++++++++
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폰트</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        p {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magni? Exercitationem, aliquid cupiditate blanditiis tenetur aliquam corporis iusto, voluptatum rem nostrum, ratione nulla! Quos, vero saepe? Eaque pariatur adipisci facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magni? Exercitationem, aliquid cupiditate blanditiis tenetur aliquam corporis iusto, voluptatum rem nostrum, ratione nulla! Quos, vero saepe? Eaque pariatur adipisci facere.</p>
+</body>
+</html>
+
+!<title> 밑에 링크
+<style> 밑에 링크!
+
++++++++++++++++++++++
+
+
+2. sementic 태그 : 시멘틱 태그
+
+1. header
+2. section
+3. article
+4. footer
+5. nav - 네비게이션의 약자
+6. aside
+7. address
+
+-----------------------------------------
+
+3. svg : Scalable Vector Graphics
+
+폰트어썸 사이트에서 페이스북을 svg로 다운 받으면 브라우저로 저장됨
+
+크롬으로 열고 - 우클릭 - 페이지 소스 보기 - ctrl+a - ctrl+c -> <body>에 붙이기
+그리고
+<style>에 
+svg {
+            width: 10%;
+            height: 10%;
+          }
+붙이기
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폰트</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        p {font-family: 'Nanum Gothic', sans-serif;
+          }
+
+          svg {
+            width: 10%;
+            height: 10%;
+          }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magni? Exercitationem, aliquid cupiditate blanditiis tenetur aliquam corporis iusto, voluptatum rem nostrum, ratione nulla! Quos, vero saepe? Eaque pariatur adipisci facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magni? Exercitationem, aliquid cupiditate blanditiis tenetur aliquam corporis iusto, voluptatum rem nostrum, ratione nulla! Quos, vero saepe? Eaque pariatur adipisci facere.</p>
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/ fill="red"></svg>
+
+</body>
+</html>
+
+
+---------------------------------------------------
+#문제 : 
+[젠코딩하는 법 알고있어야함 : 젠코딩이란; html,css를 빠른마크업과 스타일링 할 수 있도록 도와주는 축약어라고함
+tr-행 : 가로
+td-열 : 세로]
+
+Q. 5행 3열의 테이블을 만들고
+width 300
+height 500
+테이블의 배경색 노랑색
+2행 1열의 배경색 빨강
+
+A.
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 문제</title>
+
+</head>
+<body>
+    
+        <table border="1" width="300" height="500" bgcolor="yellow">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td bgcolor="red"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+</body>
+</html>
+
+-------------
+https://aboooks.tistory.com/59
+---------------
+
+4. 맵링크
+
+하나의 이미지에 여러개의 링크를 거는것이 맵링크다
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맵링크</title>
+</head>
+<body>
+    <img src="001.jpg" alt="" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="값주기" coords="값주기" href="주소걸기" alt="">
+    </map>
+</body>
+</html>
+
+
+-이 부분 외우기 : 
+<img src="001.jpg" alt="" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="" coords=" href="" alt="">
+    </map>
+
+
+area shape="rect, circle,poly   >>정사각형이나 직사각형이면 rect, 조금이라도 각이 있으면 poly, 원이면 circle
+coords="0,0,100,100
+
+
+네모
+<area shape="rect" coords="0,0,100,100" href="http://www.apple.com" alt="">
+동그라미
+<area shape="circle" coords="100,100,100" href="http://www.apple.com" alt="">
+
+
+
+맵링크 3개 걸어보기 : 
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맵링크</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="맵링크이미지.png" alt="" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="poly" coords="83,147,178,89,269,143,175,196" href="https://developer.mozilla.org/ko/docs/Web/JavaScript" alt="">
+        <area shape="poly" coords="76,144,76,256,173,305,173,202" href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics" alt="">
+        <area shape="poly" coords="176,202,176,307,272,256,272,145" href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started" alt="">
+    </map>
+</body>
+</html>
+
+
+
+
+
+
+좌표는 포토샵으로 잡는다
+포토샵 룰러를 픽셀로 바꾸고
+가이드선 잡고 0으로 위치 잡은 뒤 
+걸려는 위치를 라쏘툴로 잡아준 다음 window-info 패널 켜면 x,y 좌표 잡을 수 있다
+[웹표준 사이즈로 새 파일 만들기 한 다음 이미지 열어서 끌고 와야함]
+
+-----------------------------
+
+5. 폼태그 >>서버와의 전송이 이루어지는 부분이 있을경우에 사용하는 태그
+
+ex)네이버 검색창에 검색하면 결과물 가져와서 노출시켜주는거
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form태그와 인풋요소</title>
+</head>
+<body>
+    <form action="">
+        <h1>로그인</h1>
+        아이디: <input type="text"><br>
+        패스워드: <input type="password" autocomplete="off"><br><br>
+        <input type="submit" value="제출"> <input type="reset" value="초기화"><br><br>
+
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="datetime"><br>
+        <input type="datetime-local"><br><br>
+        <input type="range"><br><br>
+        <input type="week"><br>
+        <input type="number" step="5"><br>
+        <input type="file"><br>
+        <textarea name="" id="" cols="60" rows="15"></textarea>
+    </form>
+</body>
+</html>
+
+[textarea는 절때 줄 바꿈 하면 안됨. </textarea>가 뒤에 바로 붙어야함]
+[<textarea name="" id="" cols="60" row="15" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nulla in, magni quasi veritatis omnis esse fugit sint accusamus expedita ducimus repudiandae, velit nesciunt quae, numquam odit assumenda temporibus quas. 
+        </textarea>처럼 readonly 넣어주면 회원가입할때 나오는 약관처럼 만들 수 있다.
+[step="5"로 주면 5단계씩 올라간다]
+[week는 올해의 몇번째 주인지 알려준다]
+[range는 밝기]
+[datetime-local은 현지시간]
+[datetime은 사파리에서는 뜬다 : 즉, 사용하면 안됨]
+[value="제출,초기화" 해줘야 익스플로러에서 열었을때도 똑같이 열린다]
+[autocomplete="off"로 해준다.]
+[인풋은 아이디의 경우 autocomplete가 on이 디폴트인데 패스워드는 기억 안하는게 좋으므로 off로 써주는것]
+
+-------------------------------------------------
+
+1207-005-폼과인풋요소2.html
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼과 인풋요소2</title>
+</head>
+<body>
+    <form action="">
+        <h1>당신의 성별은?</h1>
+        <input type="radio" name="men">여성
+        <input type="radio" name="men">남성
+
+        <h2>당신의 취미를 2가지 선택해주세요</h2>
+        <input type="checkbox" name="racing">레이싱
+        <input type="checkbox" name="fishing">낚시
+        <input type="checkbox" name="snowboard">스노우보드
+        <input type="checkbox" name="piano">피아노치기
+        <input type="checkbox" name="tv">TV보기
+        <input type="checkbox" name="mung">멍때리기
+        <input type="checkbox" name="baseball">야구장가기
+        <input type="checkbox" name="music">음악감상
+        <input type="checkbox" name="movie">영화감상
+    </form>
+
+    <dl>
+        <dt>오늘은 수요일</dt>
+        <dd>삼겹살</dd>
+        <dd>알곱창</dd>
+        <dd>부대찌개</dd>
+        <dd>치킨</dd>
+        <dd>피자</dd>
+        <dd>육회</dd>
+    </dl>
+    <pre>오늘은            졸린다</pre>
+    <table border="1" width="300" height="300">
+        <tr>
+            <th>16강</th>
+            <th>8강</th>
+            <th>4강</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+[th : 가운데정렬, 굵은서체]
+[dl,dt,dd]
+[단일 선택일 때는 name이 men으로 같아야 한다. 만약 men, mens로 하면 둘다 선택이 되버린다.]
+
+[pre태그 : 내가 띄워쓰는 만큼 띄워져서 구현된다. 하지만 쓰는걸 주의한다]
+
+pre 태그의 장점
+1.수학공식 유리
+2.자바스크립트 코드
+
+but 음성낭독기는 pre태그를 만나는 순간 그대로 띄어 넘어 버린다는 단점이 있다.
+
+
+.

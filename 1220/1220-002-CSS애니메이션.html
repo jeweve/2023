@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 애니메이션</title>
+    <style>
+        .cls001 {
+            width: 60px;
+            height: 60px;
+            background: red;
+
+            animation: hehe 2s infinite reverse cubic-bezier(.16,.87,1,.01);
+            /* cubic-bezier 사이트에서 카피해서 붙이면 간단하다 */
+            /* animation: hehe 2s infinite reverse; */
+            /* animation: hehe 2s infinite alternate ; */
+            /* animation: hehe 2s infinite linear; */
+            /* animation: hehe 2s 5 linear; */
+            /* animation-name: hehe;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear; */
+             /*linear -> 일정한 속도로 가는것  */
+            /* 길게 안쓰고 animation: hehe 2s infinite; 이렇게만 써도 작동한다 */
+        }
+
+        @keyframes hehe {
+            
+            /* 0% {
+                top: 0;
+                left: 0;
+            } */
+            from {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 0;
+                left: 250px;
+            }
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+            75% {
+                top: 250px;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 0;
+            }
+            /* 100 {
+                top: 0;
+                left: 0;
+            } */
+        }
+
+        /* 0, 25, 50, 75, 100 으로 나눈것은 animation-duration: 2s;를 나눈것이다 */
+        /* 0% -> from // 100% -> to 로 대체 가능 */
+        
+        .cls002 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cls001 cls002">
+        <!-- class 동시에 주는법 -->
+        <!-- id는 동시에 못줌! -->
+        <!-- 1번 줄때는 무조건 id, 여러번 돌려쓸때는 무조건 class! -->
+
+
+    </div>
+</body>
+</html>
+
+<!-- cls를 2개 만든 이유는 좌표값을 따로 주기 위해 : absolute -->
+<!-- 예제가 조금 다름. 굳이 class를 2개 주지 않아도 된다. -->

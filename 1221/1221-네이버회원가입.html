@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버회원가입</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #wrapper {
+            margin: 0 auto;
+            width: 600px;
+            padding: 0;
+            overflow: hidden;
+            /* border: 1px solid red; */
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            color: greenyellow;
+            text-align: center;
+        }
+
+        .check {
+            /* border: 1px solid rebeccapurple; */
+            float: left; 
+            height: 60px;
+            width: 40px;
+            line-height: 60px;
+
+            
+        }
+
+        .tex {
+            /* border: 1px solid black; */
+            float: left;
+            font-weight: 600;
+            width: 560px;
+            /* height: 60px; */
+            
+        }
+
+        textarea {
+            resize: none;
+            overflow: scroll;
+        }
+
+        #end {
+            text-align: center;
+        }
+
+        .end {
+            clear: both;
+            text-align: justify;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 280px;
+            height: 80px;
+            background: #8ac007;
+            float: left;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            margin-right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    
+    <form action="">
+        <h1>NAVER</h1>
+
+        <section>
+        <div class="check"><input type="checkbox"></div>
+        <div class="tex"><p><u>네이버 이용약관, 개인정보 수집 및 이용, 위치기반서비스 이<br>용약관(선택), 프로모션 정보 수신(선택)에 모두 동의합니다.</u></p></div>
+        </section>
+
+        <section>    
+        <div class="check"><input type="checkbox"></div>
+        <div class="tex"><p>네이버 이용약관 동의<span style="color:greenyellow">(필수)</span></p></div>
+        <textarea name="" id="" cols="84" rows="10" readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit harum modi a vitae exercitationem architecto tempore, ea optio earum nihil officia similique? Unde tempora optio fuga eveniet illum architecto officia.</textarea>
+        </section>    
+
+        <div class="check"><input type="checkbox"></div>
+        <div class="tex"><p>개인정보 수집 및 이용 동의<span style="color:greenyellow">(필수)</span></p></div>
+        <textarea name="" id="" cols="84" rows="10" readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit harum modi a vitae exercitationem architecto tempore, ea optio earum nihil officia similique? Unde tempora optio fuga eveniet illum architecto officia.</textarea>
+
+        <div class="check"><input type="checkbox"></div>
+        <div class="tex"><p>위치기반서비스 이용약관 동의(선택)</p></div>
+        <textarea name="" id="" cols="84" rows="10" readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit harum modi a vitae exercitationem architecto tempore, ea optio earum nihil officia similique? Unde tempora optio fuga eveniet illum architecto officia.</textarea>
+
+        <div class="check"><input type="checkbox"></div>
+        <div class="tex"></p>프로모션 정보 수신 동의(선택)</p></div>
+        <p class="end">네이버에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화(네이버앱 알림 또는 문자), 이메일로 받아보실 수 있습니다. 일부 서비스(별도 회원 체계로 운영하거나 네이버 가입 이후 추가 가입하여 이용하는 서비스 등)의 경우, 개별 서비스에 대해 별도 수신 동의를 받을 수 있으며, 이때에도 수신 동의에 대해 별도로 안내하고 동의를 받습니다.</p> 
+        <div id="end">
+            <button type="reset cls001">취소</button>
+            <button type="submit cls002">확인</button>    
+        </div>
+    </div>
+
+       
+        
+    </form>
+    </div>
+</body>
+</html>

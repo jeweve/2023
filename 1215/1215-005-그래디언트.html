@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그레디언트</title>
+    <style>
+        #box {
+            background: repeating-radial-gradient(ellipse, red 0, red 20px, orange 20px, orange 40px);
+            /* ellipse를 주면 타원형, circle을 주면 원형 */
+            /* 원형 그레디언트는 to top이 없어져야 함 */
+            /* repeating-linear-gradient(to top, red 0, red 20px, orange 20px, orange 40px); */
+            /* 왜 orange가 21px가 아닐까 >> 확인해보세요 >> 브라우저 확대해서 보면 선이 뿌옇게 보일것임 >> 즉 중착되는 20이 맞는 소스값  */
+            /* background: linear-gradient(45deg, red, orange); */
+            /* to top : top 방향으로 > to right > 45deg ..*/
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>!</p>
+    </div>
+</body>
+</html>

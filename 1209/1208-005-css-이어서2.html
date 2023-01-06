@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        h1 {
+            font-size: 30px;
+            font-weight: 800;
+            /* 100-900사이의 수치값을 사용하며 bold bolder등의 표현은 잘 사용하지 않는다 */
+            color: white;
+            font-family: "Arial", Helvetica, sans-serif; 
+            text-decoration: ;
+            /* text-decoration-color: green; */
+            /* 언더라인underline 오버라인overline 라인쓰루line-through */
+            background-color: #aaa;
+            border: 20px solid red;
+            width: 190px;
+            height: 190px;
+            text-align: center;
+            line-height: 190px;
+            /* line-height :행간 */
+            /* border-width: 20px; */
+            /* border-style: dotted; */
+               /* dashed solide dotted 뒤는 몰라도 됨:(inset outset ridge groove) */
+            /* border-color: gray; */
+            /* width: 190px; */
+            /* 실무에서는 이렇게 길게 쓰지 않는다 짧게 한방에 쓴다 */
+            border-radius: 20px 40px 50px 95px;
+            /* 위왼-위오른쪽-아래왼-아래오른쪽 */
+            /* 50%를 주면 정원이 된다 95px로 줘도 정원이 되지만 결과가 안먹으면 50%로 주는게 맞다 코드구성에 따라 안먹는 경우가 생긴다 */
+            background-color: purple;
+            box-shadow: 5px 5px 0px black;
+            /* x축 y축 블러량, 컬러값 */
+            text-shadow: 5px 5px 0px black;
+            /* 박스 섀도우와 똑같다 */
+        }
+        /* font-weight:폰트 굵기. 400이 노멀, 600이 볼드 */
+        /* 폰트 3개 입력하는 이유 : Arial이 없으면 helvetica, sans-serif순으로 먹음 */
+    </style>
+</head>
+<body>
+    <h1>photoshop</h1>
+</body>
+</html>
+
+<!-- 1. 외부시트로 저장하는 법 : 이름.css로 저장
+2. 외부시트를 내부시트로 불러오는 법 - link치면 link:css 자동으로 뜸 그거 입력
+3. 인라인스타일시트 쓰는 방법 밑에...
+<style>
+    h1 { 
+        원하는 명령: 값; 값2; 값3 ...
+    } 
+-->

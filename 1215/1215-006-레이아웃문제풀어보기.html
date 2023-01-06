@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        #wrapper {
+            width: 80%;
+            overflow: hidden;
+            /* overflow >> 실무팁 >> 알아서 딱 사이즈 맞게 감싸준다* heigth 대신 이거 주기.*/
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+        header {
+            width: 80%;
+            height: 150px;
+            background: dodgerblue;
+            margin: 0 auto;
+        }
+        #logo {
+            float: left;
+            width: 250px;
+            height: 100px;
+        }
+
+        #logo > h1 {
+            color: white;
+            padding: 8px;
+            line-height: 100px;
+        }
+
+        nav {
+            /* border: 1px solid red; */
+            width: 450px;
+            height: 50px;
+            float: right;
+            margin-top: 70px;
+        }
+
+        nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            /* border: 1px solid black; */
+        }
+
+        nav > ul >li {
+            display: inline-block;
+            margin-right: 20px;
+            color: #fff;
+            cursor: pointer;
+            /* border: 1px solid black; */
+        }
+
+        #box1 {
+            border: 1px solid black;
+            border-radius: 25px 25px 25px 25px;
+            margin: 20px;
+            padding: 8px;
+            margin-right: 60px;
+        }
+
+        #box2 {
+            border: 1px solid blue;
+            border-radius: 25px 25px 25px 25px;
+            margin: 20px;
+            padding: 8px;
+            margin-right: 60px;
+        }
+
+        #box3 {
+            border: 1px solid green;
+            border-radius: 25px 0px 25px 0px;
+            margin: 20px;
+            padding: 8px;
+            margin-right: 60px;
+        }
+
+        .tex {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        dt {
+            color: blueviolet;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>애완견 종류</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>애완견 종류</li>
+                <li>입양하기</li>
+                <li>건강돌보기</li>
+                <li>더불어살기</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+    <div id="box1">
+        <h1 class="tex">★활달한 강아지</h1>
+        <dl>
+            <dt>요크셔 테리어</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam quo, voluptates possimus molestias quidem officiis saepe consequatur optio! Vel, officia accusamus! Delectus a soluta ullam neque, dolorum quam dolorem?</dd>
+            
+            <dt>말티즈</dt>
+                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta doloremque. Eum eveniet eos dolore possimus vero, molestiae temporibus odio est quas fugit provident aspernatur laborum a ipsam, accusamus placeat?</dd>
+            
+            <dt>포메 라이언</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, aspernatur provident repellendus at doloribus, eius, saepe voluptatem praesentium ipsa quisquam dolor sapiente corporis maiores quasi obcaecati tempore asperiores modi vel?</dd>
+            
+            <dt>골든 리트리버</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates culpa pariatur impedit natus libero rem omnis porro vel quis illum dolorum facere quia nisi reprehenderit exercitationem, maiores tempore illo!</dd>
+            
+        </dl>
+    </div>
+
+    <div id="box2">
+        <h1 class="tex">★온순한강아지</h1>
+        <dl>
+            <dt>쉬즈</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam quo, voluptates possimus molestias quidem officiis saepe consequatur optio! Vel, officia accusamus! Delectus a soluta ullam neque, dolorum quam dolorem?</dd>
+            
+            <dt>퍼그</dt>
+                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta doloremque. Eum eveniet eos dolore possimus vero, molestiae temporibus odio est quas fugit provident aspernatur laborum a ipsam, accusamus placeat?</dd>
+            
+            <dt>래브라도 리트리버 </dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, aspernatur provident repellendus at doloribus, eius, saepe voluptatem praesentium ipsa quisquam dolor sapiente corporis maiores quasi obcaecati tempore asperiores modi vel?</dd>
+           
+        </dl>
+    </div>
+
+    <div id="box3">
+        <h1 class="tex">★사납지만 복종적인 강아지</h1>
+        <dl>
+            <dt>미니어쳐핀셔
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam quo, voluptates possimus molestias quidem officiis saepe consequatur optio! Vel, officia accusamus! Delectus a soluta ullam neque, dolorum quam dolorem?</dd>
+            </dt>
+            <dt>푸들
+                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta doloremque. Eum eveniet eos dolore possimus vero, molestiae temporibus odio est quas fugit provident aspernatur laborum a ipsam, accusamus placeat?</dd>
+            </dt>
+            <dt>폭스테리어
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, aspernatur provident repellendus at doloribus, eius, saepe voluptatem praesentium ipsa quisquam dolor sapiente corporis maiores quasi obcaecati tempore asperiores modi vel?</dd>
+            </dt>
+        </dl>
+    </div>
+    
+    
+    </div>
+</body>
+</html>

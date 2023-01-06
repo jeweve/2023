@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 강사님풀이따라가기</title>
+    <style>
+        /* wrapper는 전체를 감싸는거 외엔 아무것도 하지 않는다 */
+        #wrapper {
+            margin: 0 auto;
+            width: 1000px;
+            /* 임의로 절대픽셀 잡아줌 -> 100%로 계산하기 편하라고!*/
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        header {
+            width: 100%;
+            height: 120px;
+            /* height에 %를 주는건 절대 불가능. px로 줘야한다 무조건 */
+            /* width는 %도 먹는다 */
+            background: orange;
+            overflow: hidden;
+        }
+
+        #logo {
+            float: left;
+            width: 120px;
+            height: 40px;
+            background: black;
+            margin: 20px 0 0 20px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            float: right;
+            width: 350px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        section {
+            width: 100%;
+            overflow: hidden;
+            background: dodgerblue;
+        }
+        /* section : 시멘틱태그 */
+
+        #left {
+            width: 65%;
+            float: left;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 140px;
+            height: 140px;
+            background: red;
+            float: left;
+            margin: 10px;
+        }
+
+        #right {
+            float: right;
+            width: 25%;
+            background: yellowgreen;
+            height: 400px;
+            margin: 10px;
+        }
+
+        footer {
+            clear: both;
+            /* clear: both를 줘야 위에서 준 float의 영향을 받지 않고 밑으로 떨어진다 */
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            background: darkorange;
+            line-height: 100px;
+        }
+
+        span {
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                LOGO
+            </div>
+        <nav>
+            <ul>
+                <li>MENU1</li>
+                <li>MENU2</li>
+                <li>MENU3</li>
+                <li>MENU4</li>
+            </ul>
+        </nav>
+        </header>
+        <section>
+        <div id="left">
+            <!--tip: float left 주기 -->
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+        </div>
+        <div id="right">
+            <!-- tip: float right 주기 -->
+            <!-- <aside></aside> -->
+        </section>
+        <footer>
+            <span>today</span>
+        </footer>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 2단배열 3단배열 -->
